@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+       <class name="com.tcs.tests.PHPTravelsTestCases_Agent">
+      <methods>
+      <include name="verifyLoginPageLaunch"/>
+      		<include name="verifyLoginWithInvalidEmailAndInvalidPassword"/>      		     		
+      		<include name="verifyLoginBlankEmail"/>
+      		<include name="verifyBlankEmailandPassword"/>
+      		<include name="verifyLoginBlankPassword"/>
+      		<include name="verifyLoginWithValidEmailAndInValidPassword"/>
+      		<include name="verifyLoginWithInValidEmailAndValidPassword"/>
+      		<include name="verifySignupButton"/>
+      		<include name="verifyRememberMeCheckbox"/>
+      		<include name="verifyLoginWithValidEmailAndValidPassword"/>
+      		<!--<include name="verifyMyBookings"/>
+      		<include name="verifyAddFunds"/>
+      		<include name="verifyMyProfile"/>
+      		<include name="verifyLogout"/>
+      		<include name="verifyPayPalPayment"/>
+      		<include name="verifyVoucher"/>
+      		<include name="verifyAddressUpdate"/>
+      		<include name="verifyPayPalPayment"/>
+      		<include name="verifyPayPalPayment"/> -->
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
