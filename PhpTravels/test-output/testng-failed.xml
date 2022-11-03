@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tcs.tests.PHPTravelsTestCases_Agent">
+      <class name="com.tcs.tests.PHPTravelsTestCases_Admin">
         <methods>
-          <include name="verifySignupButton"/>
-          <include name="testclosure"/>
+          <include name="verifyLoginWithInvalidEmailAndInvalidPassword"/>
           <include name="setup"/>
-          <include name="verifyRememberMeCheckbox"/>
         </methods>
-      </class> <!-- com.tcs.tests.PHPTravelsTestCases_Agent -->
+      </class> <!-- com.tcs.tests.PHPTravelsTestCases_Admin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

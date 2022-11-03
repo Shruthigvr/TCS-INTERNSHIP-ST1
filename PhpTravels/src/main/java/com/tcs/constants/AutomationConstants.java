@@ -31,10 +31,7 @@ public class AutomationConstants {
 	public static final String PHPTRAVELS_ADMIN_DASHBOARD_WEBSITE_URL ="https://phptravels.net/";
 		
 	public static final String PHPTRAVELS_SUPPLIERLOGINPAGE_URL ="https://phptravels.net/api/supplier";
-	public static final String PHPTRAVELS_SUPPLIER_DASHBOARD_URL ="https://phptravels.net/account/dashboard";
-	public static final String PHPTRAVELS_SUPPLIER_DASHBOARD_MYBOOKINGS_URL ="https://phptravels.net/account/bookings";
-	public static final String PHPTRAVELS_SUPPLIER_DASHBOARD_ADDFUNDS_URL ="https://phptravels.net/account/add_funds";
-	public static final String PHPTRAVELS_SUPPLIER_DASHBOARD_MYPROFILE_URL ="https://phptravels.net/account/profile";
-	public static final String PHPTRAVELS_SUPPLIER_DASHBOARD_LOGOUT_URL ="https://phptravels.net/login";
-	
+	public static final String PHPTRAVELS_SUPPLIER_DASHBOARD_URL ="https://phptravels.net/api/supplier";
+	public static final String PHPTRAVELS_SUPPLIER_DASHBOARD_BOOKINGS_URL ="https://phptravels.net/api/supplier/bookings";
+		
 }

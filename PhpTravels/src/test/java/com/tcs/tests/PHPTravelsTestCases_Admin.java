@@ -169,7 +169,7 @@ public class PHPTravelsTestCases_Admin extends BaseAdmin{
 	}
 	
 	@Test(priority = 11)
-	public void verifyBookingsInvoice() throws IOException, InterruptedException {
+	public void verifyBookingStatusUpdate() throws IOException, InterruptedException {
 	
 		obj_adminlogin= new AdminLoginPage(driver);
 		String email = excelUtility.getCellData(14, 0);
@@ -184,11 +184,31 @@ public class PHPTravelsTestCases_Admin extends BaseAdmin{
 		obj_admindashboard= new AdminDashboardPage(driver);
 		Thread.sleep(3000);
 		obj_admindashboard.clickBookings();
-		obj_admindashboard.displayInvoice();
+		obj_admindashboard.statusChange();
 		
 	}
 	
-	@Test(priority = 11)
+	@Test(priority = 12)
+	public void verifyDeleteCancelledRecord() throws IOException, InterruptedException {
+	
+		obj_adminlogin= new AdminLoginPage(driver);
+		String email = excelUtility.getCellData(14, 0);
+		String password = excelUtility.getCellData(14, 1);
+		obj_adminlogin.setEmail(email);
+		obj_adminlogin.setPassword(password);
+		obj_adminlogin.clickSigninButton();		
+		String expectedURL = AutomationConstants.PHPTRAVELS_ADMIN_DASHBOARD_URL;
+		String actualURL = driver.getCurrentUrl();
+		Assert.assertEquals(expectedURL, actualURL);
+		
+		obj_admindashboard= new AdminDashboardPage(driver);
+		Thread.sleep(3000);
+		obj_admindashboard.clickBookings();
+		obj_admindashboard.deleteRecord();
+		
+	}
+	
+	@Test(priority = 13)
 	public void verifyWebsiteLink() throws IOException, InterruptedException {
 	
 		obj_adminlogin= new AdminLoginPage(driver);
@@ -213,5 +233,25 @@ public class PHPTravelsTestCases_Admin extends BaseAdmin{
 		String actualWebsiteURL = driver.getCurrentUrl();
 		Assert.assertEquals(expectedWebsiteURL, actualWebsiteURL);
 				
+	}
+	
+	@Test(priority = 14)
+	public void verifyBookingsPaymentSuccessfullInvoice() throws IOException, InterruptedException {
+	
+		obj_adminlogin= new AdminLoginPage(driver);
+		String email = excelUtility.getCellData(14, 0);
+		String password = excelUtility.getCellData(14, 1);
+		obj_adminlogin.setEmail(email);
+		obj_adminlogin.setPassword(password);
+		obj_adminlogin.clickSigninButton();		
+		String expectedURL = AutomationConstants.PHPTRAVELS_ADMIN_DASHBOARD_URL;
+		String actualURL = driver.getCurrentUrl();
+		Assert.assertEquals(expectedURL, actualURL);
+		
+		obj_admindashboard= new AdminDashboardPage(driver);
+		Thread.sleep(3000);
+		obj_admindashboard.clickBookings();
+		obj_admindashboard.displayInvoice();
+		
 	}
 }
