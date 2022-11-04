@@ -5,8 +5,19 @@
     <classes>
       <class name="com.tcs.tests.PHPTravelsTestCases_Admin">
         <methods>
-          <include name="verifyLoginWithInvalidEmailAndInvalidPassword"/>
+          <include name="verifyWebsiteLink"/>
+          <include name="verifyRememberMeCheckbox"/>
+          <include name="testclosure"/>
+          <include name="verifyLoginWithInValidEmailAndValidPassword"/>
+          <include name="verifyDeleteCancelledRecord"/>
+          <include name="verifyLoginWithValidEmailAndValidPassword"/>
+          <include name="verifyBookings"/>
+          <include name="verifyBookingsPaymentSuccessfullInvoice"/>
+          <include name="verifyBookingStatusUpdate"/>
           <include name="setup"/>
+          <include name="verifyLoginBlankPassword"/>
+          <include name="verifyBlankEmailandPassword"/>
+          <include name="verifyLoginWithValidEmailAndInValidPassword"/>
         </methods>
       </class> <!-- com.tcs.tests.PHPTravelsTestCases_Admin -->
     </classes>

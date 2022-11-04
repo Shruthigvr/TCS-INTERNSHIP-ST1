@@ -42,9 +42,9 @@ public class BaseAdmin {
 		driver.manage().window().maximize();
 	}	
 	
-//	@AfterMethod
-//	public void testclosure() {
-//		driver.quit();
-//	}
+	@AfterMethod
+	public void testclosure() {
+		driver.quit();
+	}
 
 }

@@ -3,29 +3,28 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-       <class name="com.tcs.tests.PHPTravelsTestCases_Agent">
+     <class name="com.tcs.tests.PHPTravelsTestCases_Admin">
       <methods>
       <include name="verifyLoginPageLaunch"/>
-      		<include name="verifyLoginWithInvalidEmailAndInvalidPassword"/>      		     		
-      		<include name="verifyLoginBlankEmail"/>
-      		<include name="verifyBlankEmailandPassword"/>
-      		<include name="verifyLoginBlankPassword"/>
-      		<include name="verifyLoginWithValidEmailAndInValidPassword"/>
-      		<include name="verifyLoginWithInValidEmailAndValidPassword"/>
-      		<include name="verifySignupButton"/>
-      		<include name="verifyRememberMeCheckbox"/>
-      		<include name="verifyLoginWithValidEmailAndValidPassword"/>
-      		<!--<include name="verifyMyBookings"/>
-      		<include name="verifyAddFunds"/>
-      		<include name="verifyMyProfile"/>
-      		<include name="verifyLogout"/>
-      		<include name="verifyPayPalPayment"/>
-      		<include name="verifyVoucher"/>
-      		<include name="verifyAddressUpdate"/>
-      		<include name="verifyPayPalPayment"/>
-      		<include name="verifyPayPalPayment"/> -->
+      <include name="verifyLoginWithInvalidEmailAndInvalidPassword"/>
+      <include name="verifyLoginBlankEmail"/>
+      <include name="verifyBlankEmailandPassword"/>
+      <include name="verifyLoginBlankPassword"/>
+      <include name="verifyLoginWithValidEmailAndInValidPassword"/>
+      <include name="verifyLoginWithInValidEmailAndValidPassword"/>
+      <include name="verifyRememberMeCheckbox"/>
+      <include name="verifyLoginWithValidEmailAndValidPassword"/>
+      <include name="verifyBookings"/>
+       <include name="verifyBookingsPaymentSuccessfullInvoice"/>
+      <include name="verifyBookingStatusUpdate"/>
+      <include name="verifyDeleteCancelledRecord"/>
+      <include name="verifyWebsiteLink"/>
       </methods>
       </class>
+     <!-- <class name="com.tcs.tests.PHPTravelsTestCases_Supplier"/>
+      <class name="com.tcs.tests.PHPTravelsTestCases_Agent"/>
+      <class name="com.tcs.base.BaseSetup"/>
+      <class name="com.tcs.tests.PHPTravelsTestCases_User"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
