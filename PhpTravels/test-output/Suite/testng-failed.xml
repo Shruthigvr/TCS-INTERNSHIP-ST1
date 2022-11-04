@@ -3,17 +3,25 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.tcs.tests.PHPTravelsTestCases">
+      <class name="com.tcs.tests.PHPTravelsTestCases_Admin">
         <methods>
-          <include name="verifyLoginWithInvalidEmailAndInvalidPassword"/>
+          <include name="verifyWebsiteLink"/>
           <include name="verifyRememberMeCheckbox"/>
-          <include name="verifyLoginBlankEmail"/>
-          <include name="verifyBlankEmailandPassword"/>
-          <include name="verifyLoginBlankPassword"/>
           <include name="testclosure"/>
+          <include name="verifyLoginWithInValidEmailAndValidPassword"/>
+          <include name="verifyDeleteCancelledRecord"/>
+          <include name="verifyLoginWithValidEmailAndValidPassword"/>
+          <include name="verifyBookings"/>
+          <include name="verifyLoginWithInvalidEmailAndInvalidPassword"/>
+          <include name="verifyBookingsPaymentSuccessfullInvoice"/>
+          <include name="verifyBookingStatusUpdate"/>
           <include name="setup"/>
+          <include name="verifyLoginBlankEmail"/>
+          <include name="verifyLoginBlankPassword"/>
+          <include name="verifyBlankEmailandPassword"/>
+          <include name="verifyLoginWithValidEmailAndInValidPassword"/>
         </methods>
-      </class> <!-- com.tcs.tests.PHPTravelsTestCases -->
+      </class> <!-- com.tcs.tests.PHPTravelsTestCases_Admin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
