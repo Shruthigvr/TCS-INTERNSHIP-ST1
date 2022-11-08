@@ -202,8 +202,5 @@ public class PHPTravelsTestCases_Supplier extends BaseSupplier{
 		obj_supplierdashboard=new SupplierDashboardPage(driver);
 		Thread.sleep(3000);
 		obj_supplierdashboard.clickBookingLink();
-		
-		
 	}
-
 }

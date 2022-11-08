@@ -310,8 +310,7 @@ public class PHPTravelsTestCases_User extends BaseSetup{
 		
 		String expectedURL = AutomationConstants.PHPTRAVELS_CUSTOMER_DASHBOARD_URL;
 		String actualURL = driver.getCurrentUrl();
-		Assert.assertEquals(expectedURL, actualURL);
-//		
+		Assert.assertEquals(expectedURL, actualURL);		
 		obj_customerDashboard=new CustomerDashboardPage(driver);
 		
 		obj_customerDashboard.clickMybooking();
